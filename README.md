@@ -1,6 +1,6 @@
 # Vulnerability Management Program Implementation
 
-In this project, we simulate the implementation of a comprehensive vulnerability management program, from inception to completion.
+In this project, we implementated a comprehensive vulnerability management program, from inception to completion.
 
 _**Inception State:**_ the organization has no existing policy or vulnerability management practices in place.
 
