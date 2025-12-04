@@ -150,8 +150,9 @@ See you later.
 
 ### Step 5) Initial Scan of Server Team Assets
 
-In this phase, an insecure Windows Server is provisioned to simulate the server team's environment. After creating vulnerabilities, an authenticated scan is performed, and the results are exported for future remediation steps.  
+In this phase, an insecure Windows Server is provisioned to simulate the server team's environment. After creating vulnerabilities, an authenticated scan is performed, and the results are exported for future remediation steps.  <br><br>
 
+<img width="533" height="471" alt="Screenshot 2025-12-03 at 4 37 04 PM" src="https://github.com/user-attachments/assets/d762d15e-21b3-4544-b674-3f55406949b0" />
 
 
 
@@ -321,8 +322,9 @@ See you later.
 #### Remediation Round 1: Outdated Wireshark Removal
 
 The server team used a PowerShell script to remove outdated Wireshark. A follow-up scan confirmed successful remediation.  
-[Wireshark Removal Script](https://github.com/joshmadakor1/lognpacific-public/blob/main/automation/remediation-wireshark-uninstall.ps1)  
+[Wireshark Removal Script](https://github.com/joshmadakor1/lognpacific-public/blob/main/automation/remediation-wireshark-uninstall.ps1)  <br><br>
 
+<img width="532" height="460" alt="Screenshot 2025-12-04 at 10 49 17 AM" src="https://github.com/user-attachments/assets/fafe7710-49f3-4f95-ba9a-983b88c4d378" />
 
 
 
@@ -330,29 +332,32 @@ The server team used a PowerShell script to remove outdated Wireshark. A follow-
 
 The server team used PowerShell scripts to remediate insecure protocols and cipher suites. A follow-up scan verified successful remediation, and the results were saved for reference.  
 [PowerShell: Insecure Protocols Remediation](https://github.com/joshmadakor1/lognpacific-public/blob/main/automation/toggle-protocols.ps1)
-[PowerShell: Insecure Ciphers Remediation](https://github.com/joshmadakor1/lognpacific-public/blob/main/automation/toggle-cipher-suites.ps1)
+[PowerShell: Insecure Ciphers Remediation](https://github.com/joshmadakor1/lognpacific-public/blob/main/automation/toggle-cipher-suites.ps1) <br><br>
 
+<img width="760" height="562" alt="Screenshot 2025-12-04 at 10 50 39 AM" src="https://github.com/user-attachments/assets/283d3b3f-2523-45de-9ead-540c315df06c" />
 
 
 
 #### Remediation Round 3: Guest Account Group Membership
 
 The server team removed the guest account from the administrator group. A new scan confirmed remediation, and the results were exported for comparison.  
-[PowerShell: Guest Account Group Membership Remediation](https://github.com/joshmadakor1/lognpacific-public/blob/main/automation/toggle-guest-local-administrators.ps1)  
+[PowerShell: Guest Account Group Membership Remediation](https://github.com/joshmadakor1/lognpacific-public/blob/main/automation/toggle-guest-local-administrators.ps1)  <br><br>
 
+<img width="758" height="514" alt="Screenshot 2025-12-04 at 10 52 18 AM" src="https://github.com/user-attachments/assets/893caa24-43b3-46e7-b64b-340c73d27370" />
 
 
 
 #### Remediation Round 4: Windows OS Updates
 
-Windows updates were re-enabled and applied until the system was fully up to date. A final scan verified the changes  
+Windows updates were re-enabled and applied until the system was fully up to date. A final scan verified the changes  <br><br>
+<img width="759" height="520" alt="Screenshot 2025-12-04 at 10 53 04 AM" src="https://github.com/user-attachments/assets/e3c6fc1c-0a55-43e8-b29b-119ab7f54fee" />
 
 
 ---
 
 ### First Cycle Remediation Effort Summary
 
-The remediation process reduced total vulnerabilities by 80%, from 30 to 6. Critical vulnerabilities were resolved by the second scan (100%), and high vulnerabilities dropped by 90%. Mediums were reduced by 76%. In an actual production environment, asset criticality would further guide future remediation efforts.  
+The remediation process reduced total vulnerabilities by 71%, from 31 to 9. Critical vulnerabilities were resolved by the second scan (100%), and high vulnerabilities dropped by 89%. Mediums were reduced by 65%. 
 
 <img width="602" height="373" alt="Screenshot 2025-12-02 at 4 07 42 PM" src="https://github.com/user-attachments/assets/f35779f7-48a2-4f81-90e7-c722ddb21db2" />
 
